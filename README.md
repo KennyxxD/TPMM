@@ -65,7 +65,11 @@ options:
 ```
 Here, the input folder is the output folder of last step and you will a txt file for all the candidates with Pe_R >= 1 or Span_R >= 1.
 ## Use TPMM
-The next step is to apply TPMM to get the posterior and use Bayesian FDR to get hard calling. You need to run `src/TPMM.py`.
+The next step is to apply TPMM to get the posterior and use Bayesian FDR to get hard calling. 
+```bash
+conda activate TPMM
+```
+Then you need to run `src/TPMM.py`
 ```
 usage: TPMM.py [-h] --input INPUT [--sep SEP] [--min_coverage MIN_COVERAGE] [--q_low Q_LOW] [--q_high Q_HIGH] [--max_iter MAX_ITER] [--tol TOL] [--restarts RESTARTS] [--seed SEED]
                     [--posterior_min POSTERIOR_MIN] [--posterior_col {posterior_true,posterior_non_noise,posterior_high,posterior_low,posterior_noise}] [--use_bfdr] [--bfdr_alpha BFDR_ALPHA]
