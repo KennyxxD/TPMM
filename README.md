@@ -5,7 +5,8 @@ Here, we recommend to prepare two seperate environments, one for preprocessing d
 * To install  PhaseFinder, please refer to [PhaseFinder](https://github.com/XiaofangJ/PhaseFinder)
 * To install TPMM
 ```bash
-git clone 
+git clone https://github.com/KennyxxD/TPMM.git
 conda env create -n TPMM -f environment.yml
+conda activate TPMM
 ```
 
