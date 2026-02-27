@@ -44,7 +44,7 @@ options:
 ```
 In order to help you better understand the usage, we make an example:
 If you put the contigs into the folder `data/contigs/` and the name of the files is like `CONTIGX.fasta`. Meanwhile, you put the reads into the folder `data/reads/`, and the names of the file are like `CONTIGX_clean_1.fq` and `CONTIGX_clean_2.fq`. Then you can run
-```bash
+```
 python batch_phasefinder.py -i data/contigs -o <your output dir> -t <threads> -pf <path to PhaseFinder.py> --id_sep _ --id_field 0 -r data/reads -rp _clean
 ```
 ## Get candidates for TPMM
