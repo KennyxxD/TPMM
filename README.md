@@ -10,7 +10,7 @@ conda env create -n TPMM -f environment.yml
 conda activate TPMM
 ```
 ## Preprocess the data
-Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(fastq.gz or .gz) in two folders. Then you need to run
+Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(.fq) in two folders. Then you need to run
 ```bash
 conda activate PhaseFinder
 ```
@@ -36,9 +36,15 @@ options:
   -r READS_DIR, --reads_dir READS_DIR
                         Directory containing reads files
   -rp READS_PREFIX, --reads_prefix READS_PREFIX
-                        String inserted between ID and read suffix (e.g. '_clean' for ID_clean_1.fastq.gz). Can be empty.
+                        String inserted between ID and read suffix (e.g. '_clean' for ID_clean_1.fq). Can be empty.
   --r1_suffix R1_SUFFIX
                         Suffix for read1 filename
   --r2_suffix R2_SUFFIX
                         Suffix for read2 filename
 ```
+In order to help you better understand the usage, we make an example:
+If you put the contigs into the folder `data/contigs/` and the name of the files is like `CONTIGX.fasta`. Meanwhile, you put the reads into the folder `data/reads/`, and the names of the file are like `CONTIGX_clean_1.fq` and `CONTIGX_clean_2.fq`. Then you can run
+```bash
+python batch_phasefinder.py -i data/contigs -o <your output dir> -t <threads> -pf <path to PhaseFinder.py> --id_sep _ --id_field 0 -r data/reads -rp _clean
+```
+
