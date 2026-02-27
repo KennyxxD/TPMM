@@ -10,9 +10,8 @@ conda env create -n TPMM -f environment.yml
 conda activate TPMM
 ```
 ## Preprocess the data
-Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(fastq.gz or .gz) in two folders.
+Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(fastq.gz or .gz) in two folders. Then you need to run `src/batch_phasefinder.py`
 ```
-python batch_phasefinder_github.py -h 
 usage: batch_phasefinder_github.py [-h] -i INPUT_DIR -o OUTPUT_DIR [-t THREADS] [-pf PHASEFINDER] [--id_sep ID_SEP] [--id_field ID_FIELD] -r READS_DIR [-rp READS_PREFIX] [--r1_suffix R1_SUFFIX]
                                    [--r2_suffix R2_SUFFIX]
 
