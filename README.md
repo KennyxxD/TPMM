@@ -64,7 +64,7 @@ options:
                         Output file for rows that fail the filter (default: failed.ratio.rows.txt).
 ```
 Here, the input folder is the output folder of last step and you will a txt file for all the candidates with Pe_R >= 1 or Span_R >= 1.
-## Use TPMM
+## Estimation and obtain results
 The next step is to apply TPMM to get the posterior and use Bayesian FDR to get hard calling. 
 ```bash
 conda activate TPMM
