@@ -7,7 +7,6 @@ Here, we recommend to prepare two seperate environments, one for preprocessing d
 ```bash
 git clone https://github.com/KennyxxD/TPMM.git
 conda env create -n TPMM -f environment.yml
-conda activate TPMM
 ```
 ## Preprocess the data
 Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(.fq) in two folders. Then you need to run
