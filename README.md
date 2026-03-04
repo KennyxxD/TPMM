@@ -4,16 +4,17 @@ TPMM is designed to identify invertons from metagenomic data in the same environ
 Here, we recommend to prepare two seperate environments, one for preprocessing data using PhaseFinder, one for TPMM.
 * To install  PhaseFinder, please refer to [PhaseFinder](https://github.com/XiaofangJ/PhaseFinder)
 * To install TPMM
-** ```bash
-git clone https://github.com/KennyxxD/TPMM.git
-conda env create -n TPMM -f environment.yml
-```
-** You can also install the related libraries:
-```
-conda create -n TPMM python=3.8
-conda activate TPMM
-conda install -c conda-forge numpy pandas scipy
-```
+  * Install directly:
+    ```bash
+    git clone https://github.com/KennyxxD/TPMM.git
+    conda env create -n TPMM -f environment.yml
+    ```
+  * You can also install the related libraries:
+    ```
+    conda create -n TPMM python=3.8
+    conda activate TPMM
+    conda install -c conda-forge numpy pandas scipy
+    ```
 ## Preprocess the data
 Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(.fq) in two folders. Then you need to run
 ```bash
