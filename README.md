@@ -10,7 +10,7 @@ conda env create -n TPMM -f environment.yml
 ```
 You can also install the related environments:
 ```
-conda create -n TPMM python=3.11
+conda create -n TPMM python=3.8
 conda activate TPMM
 conda install -c conda-forge numpy pandas scipy
 ```
