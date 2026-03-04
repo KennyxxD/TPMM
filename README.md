@@ -11,6 +11,7 @@ Here, we recommend to prepare two seperate environments, one for preprocessing d
     ```
   * You can also install the related libraries:
     ```
+    git clone https://github.com/KennyxxD/TPMM.git
     conda create -n TPMM python=3.8
     conda activate TPMM
     conda install -c conda-forge numpy pandas scipy
