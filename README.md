@@ -9,7 +9,7 @@ git clone https://github.com/KennyxxD/TPMM.git
 conda env create -n TPMM -f environment.yml
 ```
 ## Preprocess the data
-Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(.fq) in two folders. Then you need to run
+Assuming that you have many data samples including contigs and reads from the same environment, please put the contigs(fasta) and reads(.fq) in two folders. If you need the scripts of preprocessing the raw reads, please refer to `src/preprocessing.sh`. Then you need to run
 ```bash
 conda activate PhaseFinder
 ```
