@@ -100,4 +100,6 @@ optional arguments:
 ```
 After that, you will get the results for all the data points in the `.em.tsv` file and the positive results in the `.hits.tsv` file. The detailed posterior and BFDR value are provided. Noted that if you use `use_bfdr` and do not set a value for `posterior_min`, the results will not be filtered by `posterior_min`.
 ## Reference
+## *Computational burden
+As a reference, the TPMM step was benchmarked on a single CPU core of a node equipped with dual AMD EPYC 7742 64-Core processors. For two rdatasets containing 30,293 and 2,885 candidate sites, TPMM finished in 7 seconds and 3 seconds, respectively, indicating that the additional computational burden of applying TPMM after PhaseFinder is minimal.
 The arXiv version can be found via: [arXiv version](https://arxiv.org/abs/2603.16194)
